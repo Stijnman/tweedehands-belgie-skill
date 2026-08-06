@@ -5,42 +5,40 @@ description: Zoekt en vergelijkt tweedehands aanbiedingen op Belgische platforms
 
 # Tweedehands België Zoeker
 
-**Version:** 1.8 (saved 2026-08-06)
+**Version:** 2.3 (improved + saved 2026-08-06)
 
 ## Overview
 
-Geharde skill voor Belgische tweedehands. Prioriteit particuliere verkopers, parallel fetch, prijsstats, stealth fallback, scam-guardrails, en altijd links + foto's waar mogelijk.
+Verbeterde en gesynergiseerde skill. Primair browser_tab voor exacte links en foto’s, automatische stealth, harde particuliere filter, altijd scam-warning.
 
 ## Instructies
 
-1. Identificeer product, budget, regio, staat, ophalen/verzenden.
+1. Identificeer product, budget (min/max), regio/postcode, staat, ophalen/verzenden.
 
 2. Platform keuze
    - Algemeen → 2dehands.be + 2ememain.be
    - Mode → Vinted.be
    - Lokaal groot → Facebook Marketplace + 2dehands
 
-3. URL bouw
-   - 2dehands: https://www.2dehands.be/q/{query}/
-   - Vinted: https://www.vinted.be/catalog?search_text={query}
+3. URL: https://www.2dehands.be/q/{query}/ of Vinted catalog.
 
 4. Fetch
-   - browse_page of browser_tab voor exacte links en foto's
-   - Filter pro / refurbished
-   - Blocked → humanization-stealth-browsing
+   - Primair browser_tab (waitTime 3-5, screenshot, jsCode voor links + foto’s)
+   - Scroll en extract exacte https://www.2dehands.be/v/... links
+   - Bij blocked → humanization-stealth-browsing
+   - Filter hard: particulier vs pro/refurbished
 
 5. Presentatie
-   - Altijd directe links
-   - Foto-beschrijving of screenshot indien mogelijk
+   - Top particuliere eerst
+   - Volledige links + foto-info
    - Prijsrange
-   - Scam warning: betaal nooit buiten platform
+   - Verplichte scam-warning: betaal nooit buiten platform
 
-6. Extra
-   - Lokale query versterken
-   - Kringwinkel / GIFT groepen
+6. Log voor verdere verbetering
 
 ## Scripts
 scripts/build_search_url.py
 
 ## Referenties
 references/platforms.md
+references/browser_tab_tips.md
