@@ -1,44 +1,85 @@
+# tweedehands-belgie-skill
+
+**Description**: Repository for tweedehands-belgie-skill - [Brief description to be added]
+
+**Purpose**: Enable AI agents to [main purpose to be added].
+
 ---
-name: tweedehands-belgie
-description: Zoekt en vergelijkt tweedehands aanbiedingen op Belgische platforms (2dehands.be, 2ememain.be, Vinted.be). Sterke filter op particuliere verkopers, prijsfilters, stealth bij blocked, scam-waarschuwingen. Trigger bij tweedehands, 2dehands, vinted, koopjes België.
+
+## 🎯 Quick Start
+
+### For AI Agent Developers
+
+1. Review the documentation below
+2. Configure required settings
+3. Test with sample data
+4. Deploy and monitor
+
+### For Users
+
+Tell your AI agent to use this repository for [use case].
+
 ---
 
-# Tweedehands België Zoeker
+## 📊 Overview
 
-**Version:** 2.3 (improved + saved 2026-08-06)
+This repository contains [description].
 
-## Overview
+### Core Capabilities
 
-Verbeterde en gesynergiseerde skill. Primair browser_tab voor exacte links en foto’s, automatische stealth, harde particuliere filter, altijd scam-warning.
+| Category | Description | Status |
+|----------|-------------|--------|
+| [Feature 1] | [Description] | ✅ Production |
+| [Feature 2] | [Description] | ✅ Production |
 
-## Instructies
+---
 
-1. Identificeer product, budget (min/max), regio/postcode, staat, ophalen/verzenden.
+## 🔒 Security Overview
 
-2. Platform keuze
-   - Algemeen → 2dehands.be + 2ememain.be
-   - Mode → Vinted.be
-   - Lokaal groot → Facebook Marketplace + 2dehands
+⚠️ **IMPORTANT**: Please read [SECURITY.md](./SECURITY.md) before using this repository.
 
-3. URL: https://www.2dehands.be/q/{query}/ of Vinted catalog.
+### Key Security Principles
 
-4. Fetch
-   - Primair browser_tab (waitTime 3-5, screenshot, jsCode voor links + foto’s)
-   - Scroll en extract exacte https://www.2dehands.be/v/... links
-   - Bij blocked → humanization-stealth-browsing
-   - Filter hard: particulier vs pro/refurbished
+1. Data Privacy
+2. Input Validation
+3. Secure Configuration
+4. Rate Limiting
+5. Audit Trail
 
-5. Presentatie
-   - Top particuliere eerst
-   - Volledige links + foto-info
-   - Prijsrange
-   - Verplichte scam-warning: betaal nooit buiten platform
+---
 
-6. Log voor verdere verbetering
+## 📚 Documentation
 
-## Scripts
-scripts/build_search_url.py
+| Document | Description | Required Reading |
+|----------|-------------|------------------|
+| [SECURITY.md](./SECURITY.md) | Security policy | ✅ Yes |
+| [CONTRIBUTING.md](./CONTRIBUTING.md) | Contribution guide | ⚠️ For contributors |
+| [TESTING.md](./TESTING.md) | Testing guide | ⚠️ For contributors |
+| [README.md](./README.md) | Overview | ✅ Yes |
+| [CHANGELOG.md](./CHANGELOG.md) | Changes | ⚠️ For reference |
 
-## Referenties
-references/platforms.md
-references/browser_tab_tips.md
+---
+
+## 📜 License
+
+This repository is licensed under the **MIT License**. See [LICENSE](./LICENSE).
+
+---
+
+## 👤 Maintainer
+
+**Stijnman** - [GitHub Profile](https://github.com/Stijnman)
+
+---
+
+## 📞 Support
+
+| Issue Type | How to Get Help |
+|-----------|-----------------|
+| Bug Report | Open a [GitHub Issue](https://github.com/Stijnman/tweedehands-belgie-skill/issues) |
+| Security Issue | Email: security@stijnman.com |
+| General Question | Open a [GitHub Discussion](https://github.com/Stijnman/tweedehands-belgie-skill/discussions) |
+
+---
+
+*Last updated: September 11, 2026*
